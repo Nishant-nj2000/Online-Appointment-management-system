@@ -52,7 +52,7 @@
                         <div class="form-group">
                            <asp:Textbox CssClass="form-control" ID="TextBox7" runat="server" placeholder="DOB" TextMode="Date"></asp:Textbox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox7" ErrorMessage="Required!" ForeColor="Red" ></asp:RequiredFieldValidator>
-                            <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="The date must be less than today" ControlToValidate="TextBox7" valuetocompare="<%# DateTime.Today.ToShortDateString() %>" Operator="LessThan" ForeColor="Red"></asp:CompareValidator>
+                            
                         </div>
                      </div>
 
@@ -144,8 +144,8 @@
                         <label>Pincode</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox13" runat="server" placeholder="Pincode"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Required!" ControlToValidate="TextBox8" ForeColor="Red"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ErrorMessage="Invalid Pincode Entered !" ControlToValidate="TextBox8" ValidationExpression="[0-9]{6}" ForeColor="Red"></asp:RegularExpressionValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Required!" ControlToValidate="TextBox13" ForeColor="Red"></asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ErrorMessage="Invalid Pincode Entered !" ControlToValidate="TextBox13" ValidationExpression="[0-9]{6}" ForeColor="Red"></asp:RegularExpressionValidator>
                         </div>
                      </div>
                   </div>
@@ -161,9 +161,9 @@
                       <div class="col-md-6">
                         <label>Confirm Password</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="TextBox19" runat="server" placeholder="Confirm Password"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="TextBox19" runat="server" placeholder="Confirm Password" TextMode="Password"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="TextBox19" ErrorMessage="Required!" ForeColor="Red"></asp:RequiredFieldValidator>
-                            <asp:CompareValidator ID="CompareValidator2" runat="server" errormessage="Password Mismatch !" ControlToValidate="TextBox19" ForeColor="Red" ControlToCompare="TextBox9"></asp:CompareValidator>
+                            
                         </div>
                      </div>
                   </div>
