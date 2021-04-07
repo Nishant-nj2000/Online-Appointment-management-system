@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Consultant_Registration.aspx.cs" Inherits="OAMS.Consultant_Registration" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site1.Master" CodeBehind="Consultant_Registration.aspx.cs" Inherits="OAMS.Consultant_Registration" %>
 
 <asp:Content ID="content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
@@ -293,5 +293,5 @@
          
       </div>
    </div>
-  
+  <br /><br />
 </asp:Content>
