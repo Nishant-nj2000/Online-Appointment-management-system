@@ -28,11 +28,11 @@
                   </div>
                   <div class="row">
                      <div class="col">
-                        <label>Email ID</label>
+                
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Email id" TextMode="Email"></asp:TextBox>
                         </div>
-                        <label>Password</label>
+                   
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                         </div>
@@ -41,14 +41,14 @@
                       
                    <br />
                    <div class="row">
-                     <div class="col-3">
+                     <div class="col">
                            <div class="form-group">
-                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
+                              <asp:Button class="btn btn-primary btn-block btn-lg d-block" ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
                            </div>
                      </div>
-                      <div class="col-4">
+                      <div class="col">
                            <div class="form-group">
-                               <asp:Button class="btn btn-danger btn-block btn-lg" ID="Button4" runat="server" Text="Cancel"/>
+                               <asp:Button class="btn btn-danger btn-block btn-lg d-block" ID="Button4" runat="server" Text="Cancel"/>
                            </div>
                      </div>
                   </div>
