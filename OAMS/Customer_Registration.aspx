@@ -52,7 +52,7 @@
                         <div class="form-group">
                            <asp:Textbox CssClass="form-control" ID="TextBox7" runat="server" placeholder="DOB" TextMode="Date"></asp:Textbox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox7" ErrorMessage="Required!" ForeColor="Red" ></asp:RequiredFieldValidator>
-                            <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="The date must be less than today" ControlToValidate="TextBox7" valuetocompare="<%# DateTime.Today.ToShortDateString() %>" Operator="LessThan" ForeColor="Red"></asp:CompareValidator>
+                            
                         </div>
                      </div>
 
@@ -164,9 +164,9 @@
                       <div class="col-md-6">
                         <label>Confirm Password</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="TextBox19" runat="server" placeholder="Confirm Password"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="TextBox19" runat="server" placeholder="Confirm Password" TextMode="Password"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="TextBox19" ErrorMessage="Required!" ForeColor="Red"></asp:RequiredFieldValidator>
-                            <asp:CompareValidator ID="CompareValidator2" runat="server" errormessage="Password Mismatch !" ControlToValidate="TextBox19" ForeColor="Red" ControlToCompare="TextBox9"></asp:CompareValidator>
+                            
                         </div>
                      </div>
                   </div>
