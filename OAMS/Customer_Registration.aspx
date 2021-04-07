@@ -80,7 +80,18 @@
                         </div>
                      </div>
                     
-                    <div class="col-lg-6">
+                    <div class="col-md-6">
+                        <label>Pincode</label>
+                        <div class="form-group">
+                           <asp:TextBox CssClass="form-control" ID="TextBox13" runat="server" placeholder="Pincode"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Required!" ControlToValidate="TextBox13" ForeColor="Red"></asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ErrorMessage="Invalid Pincode Entered !" ControlToValidate="TextBox13" ValidationExpression="[0-9]{6}" ForeColor="Red"></asp:RegularExpressionValidator>
+                        </div>
+                     </div>
+                  </div>
+
+                   <div class="row">
+                       <div class="col-md-12">
                         <label>Address</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox8" runat="server" placeholder="Address" TextMode="MultiLine"></asp:TextBox>
@@ -88,6 +99,7 @@
                         </div>
                      </div>
                   </div>
+
                   <div class="row">
                        <div class="col-md-6">
                         <label>City</label>
@@ -139,16 +151,7 @@
                     
                     
                   </div>
-                   <div class="row">
-                      <div class="col-md-6">
-                        <label>Pincode</label>
-                        <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox13" runat="server" placeholder="Pincode"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Required!" ControlToValidate="TextBox13" ForeColor="Red"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ErrorMessage="Invalid Pincode Entered !" ControlToValidate="TextBox13" ValidationExpression="[0-9]{6}" ForeColor="Red"></asp:RegularExpressionValidator>
-                        </div>
-                     </div>
-                  </div>
+                   
                   <div class="row">
                      <div class="col-md-6">
                         <label>Create Password</label>
