@@ -5,25 +5,26 @@
 <div class="container">
       <div class="row">
          <div class="col-md-4 mx-auto">
-            <div class="card">
+            <div class="card shadow-lg">
                <div class="card-body">
                   <div class="row">
-                     <div class="col">
-                        <center>
+                     <div class="col text-center">
+                        
                            <img width="150px" src="images/generaluser.png"/>
-                        </center>
+                        
                      </div>
                   </div>
+                   <br />
                   <div class="row">
-                     <div class="col">
-                        <center>
+                     <div class="col text-center">
+                        
                            <h3>Login</h3>
-                        </center>
+                        
                      </div>
                   </div>
                   <div class="row">
                      <div class="col">
-                        <hr>
+                        <br />
                      </div>
                   </div>
                   <div class="row">
@@ -32,7 +33,7 @@
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Email id" TextMode="Email"></asp:TextBox>
                         </div>
-                   
+                        <br />
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                         </div>
@@ -41,15 +42,12 @@
                       
                    <br />
                    <div class="row">
-                     <div class="col">
+                     <div class="col-12">
                            <div class="form-group">
-                              <asp:Button class="btn btn-primary btn-block btn-lg d-block" ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
+                              <asp:Button type="button" class="btn btn-primary btn-block" style="width:100%;" ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
                            </div>
                      </div>
-                      <div class="col">
-                           <div class="form-group">
-                               <asp:Button class="btn btn-danger btn-block btn-lg d-block" ID="Button4" runat="server" Text="Cancel"/>
-                           </div>
+                     </div>
                      </div>
                   </div>
                   
@@ -57,6 +55,6 @@
             </div>
             <br /><br /><br />
          </div>
-      </div>
-   </div>
+      
+  
 </asp:Content>
