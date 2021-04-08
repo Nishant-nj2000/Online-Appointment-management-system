@@ -44,9 +44,17 @@ namespace OAMS
                     result.Read();// Get first record.
                     String uname = result.GetString(2);// Get value of first column as string.
                     MessageBox.Show("Welcome : "+uname);
+                    Session["UTMID"] = result.GetString(0);
+                    Session["UID"] = result.GetString(1);
+                    Session["Name"] = result.GetString(2);
+                    Session["Email"] = result.GetString(3);
+                    Response.Redirect("Dashboard.aspx");
+                    
+                    
+
                 }
                 result.Close();// Close reader.
-          
+
                 connection.Close();
             }
             catch (MySqlException error)
