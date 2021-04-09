@@ -231,7 +231,6 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="update_profiles.aspx" />
-    <Content Include="update_user.aspx" />
     <Content Include="dashboardcss\assets\css\material-dashboard.css.map" />
     <Content Include="dashboardcss\assets\js\material-dashboard.js.map" />
     <Content Include="dashboardcss\assets\scss\material-dashboard.scss" />
