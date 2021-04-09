@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeBehind="Dashboard.aspx.cs" Inherits="OAMS.Dashboard"%>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.master.cs" Inherits="OAMS.Dashboard1" %>
 
 <!DOCTYPE html>
 
@@ -10,6 +10,10 @@
   <!-- Material Kit CSS for dashboard-->
   <link href="dashboardcss/assets/css/material-dashboard.css" rel="stylesheet" />
   <title>Dasboard</title>
+
+     <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
 </head>
 <body>
 
@@ -70,6 +74,8 @@
       <div class="content">
         <div class="container-fluid">
           <!-- your content here -->
+                <asp:ContentPlaceHolder ID="cpmain" runat="server">
+                </asp:ContentPlaceHolder>
         </div>
       </div>
       <footer class="footer">

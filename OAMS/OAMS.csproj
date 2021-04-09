@@ -230,7 +230,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Dashboard.aspx" />
+    <Content Include="update_user.aspx" />
     <Content Include="dashboardcss\assets\css\material-dashboard.css.map" />
     <Content Include="dashboardcss\assets\js\material-dashboard.js.map" />
     <Content Include="dashboardcss\assets\scss\material-dashboard.scss" />
@@ -397,6 +397,7 @@
     <Content Include="dashboardcss\assets\scss\material-dashboard\_tooltip.scss" />
     <Content Include="dashboardcss\assets\scss\material-dashboard\_type.scss" />
     <Content Include="dashboardcss\assets\scss\material-dashboard\_variables.scss" />
+    <Content Include="Dashboard.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="login.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -464,6 +465,13 @@
     <Compile Include="Customer_Registration.aspx.designer.cs">
       <DependentUpon>Customer_Registration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard.Master.cs">
+      <DependentUpon>Dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Master.designer.cs">
+      <DependentUpon>Dashboard.Master</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -510,12 +518,12 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.aspx.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="update_user.aspx.cs">
+      <DependentUpon>update_user.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard.aspx.designer.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="update_user.aspx.designer.cs">
+      <DependentUpon>update_user.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
