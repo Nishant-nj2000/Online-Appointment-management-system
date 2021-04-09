@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Consultant_Registration.aspx.cs" Inherits="OAMS.Consultant_Registration" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site1.Master" CodeBehind="Consultant_Registration.aspx.cs" Inherits="OAMS.Consultant_Registration" %>
 
 <asp:Content ID="content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
- <div class="container-fluid col d-flex justify-content-center" >
+ <div class="container-fluid col-9 justify-content-center" >
       <div class="row">
-         <div class="col-md-14">
-            <div class="card">
+         <div class="col-md-12">
+            <div class="card shadow-lg">
                <div class="card-body">
 
                   <div class="row">
@@ -274,15 +274,15 @@
                      </div>
                   </div>
                    <br />
-                  <div class="row">
+                  <div class="row justify-content-center">
                      <div class="col-2">
-                           <div class="form-group">
-                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Register" OnClick="Button1_Click"/>
+                           <div class="form-group text-center">
+                              <asp:Button class="btn btn-primary " ID="Button1" runat="server" Text="Register" OnClick="Button1_Click"/>
                            </div>
                      </div>
                       <div class="col-2">
-                           <div class="form-group">
-                               <asp:Button class="btn btn-danger btn-block btn-lg" ID="Button4" runat="server" Text="Cancel"/>
+                           <div class="form-group text-center">
+                               <asp:Button class="btn btn-danger " ID="Button4" runat="server" Text="Cancel"/>
                            </div>
                      </div>
                   </div>
@@ -293,5 +293,5 @@
          
       </div>
    </div>
-  
+  <br /><br />
 </asp:Content>

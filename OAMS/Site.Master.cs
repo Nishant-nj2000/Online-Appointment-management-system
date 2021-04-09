@@ -31,7 +31,7 @@ namespace OAMS
 
         protected void LinkButton3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("#");
+            Response.Redirect("login.aspx");
         }
 
         protected void LinkButton7_Click(object sender, EventArgs e)
