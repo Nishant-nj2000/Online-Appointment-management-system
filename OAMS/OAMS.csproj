@@ -230,6 +230,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="update_profiles.aspx" />
     <Content Include="update_user.aspx" />
     <Content Include="dashboardcss\assets\css\material-dashboard.css.map" />
     <Content Include="dashboardcss\assets\js\material-dashboard.js.map" />
@@ -518,12 +519,12 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="update_user.aspx.cs">
-      <DependentUpon>update_user.aspx</DependentUpon>
+    <Compile Include="update_profiles.aspx.cs">
+      <DependentUpon>update_profiles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="update_user.aspx.designer.cs">
-      <DependentUpon>update_user.aspx</DependentUpon>
+    <Compile Include="update_profiles.aspx.designer.cs">
+      <DependentUpon>update_profiles.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
