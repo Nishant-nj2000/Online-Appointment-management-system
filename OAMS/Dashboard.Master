@@ -38,7 +38,14 @@
           <li class="nav-item active  ">
             <a class="nav-link" href="#0">
               <i class="material-icons">dashboard</i>
-              <p>Dashboard</p>
+              <p> <% =Session["Role"] %> Dashboard</p>
+            </a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#0">
+              <span class="material-icons">account_circle
+              </span>
+              <p> <% =Session["Role"] %> Dashboard</p>
             </a>
           </li>
           <!-- your sidebar here -->
