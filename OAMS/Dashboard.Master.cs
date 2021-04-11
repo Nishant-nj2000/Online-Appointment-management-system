@@ -11,7 +11,17 @@ namespace OAMS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!string.IsNullOrEmpty(Session["UTMID"] as string))
+            {
+                //The code
+            }
+        }
 
+        protected void logout_Click(object sender, EventArgs e)
+        {
+            
+            Session.RemoveAll();
+            Response.Redirect("~/Login.aspx");
         }
     }
 }
