@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Dashboard.Master" CodeBehind="update_profiles.aspx.cs" Inherits="OAMS.update_profile"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Dashboard.Master" CodeBehind="update_profiles.aspx.cs" Inherits="OAMS.update_profile" EnableEventValidation="false" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cpmain" runat="server">
     <div class="container mb-5">
@@ -8,7 +8,7 @@
         
 
         
-        <form id="form1" method="post" action="update_profiles.aspx.cs">
+        
            <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail4">Name</label>
@@ -63,7 +63,7 @@
           </div>
           
           <button class="btn btn-success" type="submit" runat="server" onServerClick="Submit">Submit</button>
-        </form>
+        
            
     </div>
 </asp:Content>
