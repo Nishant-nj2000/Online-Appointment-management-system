@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
      <!--     Fonts and icons dashboard  -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <!-- Material Kit CSS for dashboard-->
   <link href="dashboardcss/assets/css/material-dashboard.css" rel="stylesheet" />
@@ -29,6 +29,78 @@
       Tip 2: you can also add an image using data-image tag
   -->
       <div class="logo">
+        <a class="simple-text logo-normal">
+          Welcome <%Response.Write(uname); %>
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Update Password</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Update Profile</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Book Appointment</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>View Appointment</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+         <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Feedback</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Complaint</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+      </div>
+    </div>
+        <% } %>
+
+<% else if (utmid=="3") { %>
+    <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white">
+      <!--
+      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+      Tip 2: you can also add an image using data-image tag
+  -->
+      <div class="logo">
         <a href="" class="simple-text logo-normal">
           Welcome <%Response.Write(uname); %>
         </a>
@@ -38,19 +110,137 @@
           <li class="nav-item active  ">
             <a class="nav-link" href="#0">
               <i class="material-icons">dashboard</i>
-              <p>Dashboard</p>
+              <p>Update Password</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Update Profile</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Update Schedule</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Approve Appointment</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+         <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>View Appointment</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Complaint</p>
             </a>
           </li>
           <!-- your sidebar here -->
         </ul>
       </div>
     </div>
+   <%}%>
+
+   <% else if(utmid=="1") { %>
+    <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white">
+      <!--
+      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+      Tip 2: you can also add an image using data-image tag
+  -->
+       <div class="logo">
+        <a href="" class="simple-text logo-normal">
+          Welcome <%Response.Write(uname); %>
+        </a>
+       </div>
+       <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Update Password</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Verify Consultants</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Verify Users</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Manage Profession</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+         <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Manage Qualifications</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="#0">
+              <i class="material-icons">dashboard</i>
+              <p>Generate Reports</p>
+            </a>
+          </li>
+          <!-- your sidebar here -->
+        </ul>
+      </div>
+    </div>
+      <% } %>
     <div class="main-panel">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
-          <div class="navbar-wrapper">         ..
-            <a class="navbar-brand" href="javascript:;">Dashboard</a>
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="#0">Dashboard</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -100,11 +290,11 @@
       </footer>
     </div>
   </div>
-    
-<% } %>
     <form id="form1" runat="server">
         <div>
         </div>
     </form>
+</div>
+        </div>
 </body>
 </html>
