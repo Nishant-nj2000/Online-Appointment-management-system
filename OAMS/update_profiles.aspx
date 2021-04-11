@@ -53,7 +53,7 @@
               <label for="inputState">State</label>
               <select id="state" class="form-control" runat="server">
                 <option>Choose...</option>
-                <option>...</option>
+                
               </select>
             </div>
             <div class="form-group col-md-2">

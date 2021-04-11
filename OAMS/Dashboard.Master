@@ -48,6 +48,13 @@
               <p> <% =Session["Role"] %> Dashboard</p>
             </a>
           </li>
+             <li class="nav-item">
+            <a class="nav-link" href="#0">
+               <!--<span class="material-icons">logout
+              </span>-->
+               <asp:Button CssClass="btn btn-success" id="btnLogin" Text="Logout" OnClick="logoutclck" /> 
+            </a>
+          </li>
           <!-- your sidebar here -->
         </ul>
       </div>
