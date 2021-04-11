@@ -36,6 +36,7 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
+
             <asp:LinkButton ID="LinkButton6" runat="server" Width="230px" Font-Size="Medium"> <i class="material-icons">dashboard</i> Update Password </asp:LinkButton>
           </li>
           <!-- your sidebar here -->

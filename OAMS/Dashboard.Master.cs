@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Windows.Forms;
 
 namespace OAMS
 {
@@ -22,6 +18,10 @@ namespace OAMS
             
             Session.RemoveAll();
             Response.Redirect("~/Login.aspx");
+        }
+        protected void logoutclck(object sender, EventArgs e)
+        {
+            MessageBox.Show("MADHAV");
         }
     }
 }
