@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -37,18 +32,29 @@ namespace OAMS
                 String queryStr;
                 // Here goes the code needed to perform operations on the
                 // database such as querying or inserting rows into a table
-                queryStr = "SELECT * FROM `OAMS`.`user_master` where Email_ID='" + TextBox1.Text + "' and Password ='"+ TextBox2.Text +"';";
+                queryStr = "SELECT * FROM `OAMS`.`user_master` inner join user_type_master ON user_master.UTMID=user_type_master.UTMID where user_master.Email_ID='" + TextBox1.Text + "' and user_master.Password ='" + TextBox2.Text +"';";
+                Console.WriteLine(queryStr);
                 cmd = new MySql.Data.MySqlClient.MySqlCommand(queryStr, connection);
                 connection.Open();
                 var result = cmd.ExecuteReader();
+                /*Console.WriteLine(result);*/
+                
                 if (result.HasRows)
                 {
                     result.Read();// Get first record.
                     String uname = result.GetString(2);// Get value of first column as string.
-                    MessageBox.Show("Welcome : "+uname);
+                    Session["UTMID"] = result.GetString(0);
+                    Session["Role"] = result.GetString(14);
+                    Session["Name"] = result.GetString(2);
+                    Session["Email"] = result.GetString(3);
+                    Response.Redirect("update_profiles.aspx");
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Emailid or Password !");
                 }
                 result.Close();// Close reader.
-          
+
                 connection.Close();
             }
             catch (MySqlException error)
