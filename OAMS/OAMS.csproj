@@ -161,6 +161,7 @@
     <Content Include="Customcss\footer.css" />
     <Content Include="Customer_Registration.aspx" />
     <Content Include="Datatables\css\jquery.dataTables.min.css" />
+    <Content Include="forgot_password.aspx" />
     <Content Include="images\appt.png" />
     <Content Include="images\bg1.jpg" />
     <Content Include="images\bg2.jpg" />
@@ -253,6 +254,13 @@
     </Compile>
     <Compile Include="Customer_Registration.aspx.designer.cs">
       <DependentUpon>Customer_Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgot_password.aspx.cs">
+      <DependentUpon>forgot_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgot_password.aspx.designer.cs">
+      <DependentUpon>forgot_password.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
