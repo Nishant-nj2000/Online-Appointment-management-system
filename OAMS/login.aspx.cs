@@ -2,6 +2,8 @@
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
+
+
 namespace OAMS
 {
     public partial class login : System.Web.UI.Page
@@ -60,5 +62,12 @@ namespace OAMS
                 MessageBox.Show(error.Message);
             }
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("forgot_password.aspx");
+        }
+
+
     }
 }

@@ -45,9 +45,14 @@
                      <div class="col-12">
                            <div class="form-group">
                               <asp:Button type="button" class="btn btn-primary btn-block" style="width:100%;" ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
-                           </div>
+                           </div>                     
                      </div>
-                     </div>
+                     </div><br />
+                   <div class="row">
+                       <div class="col text-center">
+                           <asp:LinkButton ID="LinkButton1" style="text-decoration:none;" runat="server" OnClick="LinkButton1_Click" >Forgot password?</asp:LinkButton>
+                       </div>
+                   </div>
                      </div>
                   </div>
                   
