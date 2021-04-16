@@ -56,7 +56,7 @@
                         </li>
                         &nbsp
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton7" style="margin-right:20px;" runat="server" OnClick="LinkButton7_Click" CausesValidation="False"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="LinkButton7" style="margin-right:20px;" runat="server" OnClick="LinkButton7_Click" CausesValidation="False"><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</asp:LinkButton>
  
                         </li>
                     </ul>
