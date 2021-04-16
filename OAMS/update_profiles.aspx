@@ -51,10 +51,10 @@
             </div>
             <div class="form-group col-md-4">
               <label for="inputState">State</label>
-              <select id="state" class="form-control" runat="server">
-                <option>Choose...</option>
+              <input type="text" id="state" class="form-control" runat="server">
                 
-              </select>
+                
+              </input>
             </div>
             <div class="form-group col-md-2">
               <label for="inputZip">Pincode</label>
