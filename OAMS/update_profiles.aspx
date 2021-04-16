@@ -19,7 +19,7 @@
             <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" name="email" id="txtEmail" runat="server">
+              <input type="email" class="form-control" name="email" id="email" runat="server">
             </div>
             <div class="form-group col-md-6">
               <label for="inputPassword4">Password</label>
@@ -51,11 +51,9 @@
             </div>
             <div class="form-group col-md-4">
               <label for="inputState">State</label>
-              <select id="state" class="form-control" runat="server">
-                <option>Choose...</option>
-                
-              </select>
-            </div>
+              <input type="text" id="state" class="form-control" runat="server">
+              </input>
+             </div>
             <div class="form-group col-md-2">
               <label for="inputZip">Pincode</label>
               <input type="text" class="form-control" id="pincode" runat="server">

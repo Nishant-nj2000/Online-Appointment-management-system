@@ -37,7 +37,7 @@ namespace OAMS
                         while (result.Read())
                         {
                             Name.Value = result.GetString(0);
-                            txtEmail.Value = result.GetString(1);
+                            email.Value = result.GetString(1);
                             password.Value = result.GetString(2);
                             gender.Value = result.GetString(3);
                             phone.Value = result.GetString(4).ToString();
@@ -57,11 +57,47 @@ namespace OAMS
         }
         protected void Submit(object sender, EventArgs e)
         {
-           
-                string name = Request.Form["Name"];
-                /*string email = txtEmail.Value;*/
-                MessageBox.Show("SUBMIT BUTTON CLICKED");
-            
+            try
+            {
+                string name = Name.Value;
+
+                MySqlConnectionStringBuilder connBuilder = new MySqlConnectionStringBuilder();
+
+                connBuilder.Add("Database", "OAMS");
+                connBuilder.Add("Data Source", "contra.cjrbdmxkv84s.ap-south-1.rds.amazonaws.com");
+                connBuilder.Add("User Id", "admin");
+                connBuilder.Add("Password", "MiloniMadhav");
+
+                MySqlConnection connection = new MySqlConnection(connBuilder.ConnectionString);
+
+                MySqlCommand cmd = connection.CreateCommand();
+                connection.Open();
+
+                
+                
+                cmd.CommandText = "UPDATE `OAMS`.`user_master` SET `Name` =@Name," +
+                    "`Email_ID` = @emailid,`Phone_No` = @phone,`Gender` = @gender," +
+                    "`Password` = @password,`City` = @city,`State` = @state,`Pincode` = @pincode" +
+                    " WHERE `Email_ID` = @sessEmail;";
+
+                cmd.Parameters.Add("@Name", MySqlDbType.VarString).Value = Name.Value;
+                cmd.Parameters.Add("@emailid", MySqlDbType.VarString).Value = email.Value;
+                cmd.Parameters.Add("@phone", MySqlDbType.VarString).Value = phone.Value;
+                cmd.Parameters.Add("@gender", MySqlDbType.VarString).Value = gender.Value;
+                cmd.Parameters.Add("@password", MySqlDbType.VarString).Value = email.Value;
+                cmd.Parameters.Add("@city", MySqlDbType.VarString).Value = email.Value;
+                cmd.Parameters.Add("@state", MySqlDbType.VarString).Value = email.Value;
+                cmd.Parameters.Add("@pincode", MySqlDbType.VarString).Value = email.Value;
+
+
+                /* cmd = new MySql.Data.MySqlClient.MySqlCommand(queryStr, connection);*/
+                connection.Open();
+                var result = cmd.ExecuteNonQuery();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
             
         }
     }
