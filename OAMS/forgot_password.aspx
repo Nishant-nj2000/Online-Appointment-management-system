@@ -1,6 +1,4 @@
-
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site1.Master" CodeBehind="forgot_password.aspx.cs" Inherits="OAMS.forgot_password" %>
-
+﻿<%@ Page Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="forgot_password.aspx.cs" Inherits="OAMS.forgot_password" %>
 
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -48,3 +46,4 @@
         </div>
     </div>
 </asp:Content>
+
