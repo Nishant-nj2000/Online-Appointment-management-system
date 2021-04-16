@@ -68,6 +68,5 @@ namespace OAMS
             Response.Redirect("forgot_password.aspx");
         }
 
-
     }
 }
