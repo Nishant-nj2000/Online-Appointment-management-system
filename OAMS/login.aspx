@@ -50,7 +50,7 @@
                      </div><br />
                    <div class="row">
                        <div class="col text-center">
-                           <asp:LinkButton ID="LinkButton1" style="text-decoration:none;" runat="server" >Forgot password?</asp:LinkButton>
+                           <asp:LinkButton ID="LinkButton1" style="text-decoration:none;" runat="server" OnClick="LinkButton1_Click" >Forgot password?</asp:LinkButton>
                        </div>
                    </div>
                      </div>
