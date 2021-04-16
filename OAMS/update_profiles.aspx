@@ -51,8 +51,9 @@
             </div>
             <div class="form-group col-md-4">
               <label for="inputState">State</label>
-              <input type="text" class="form-control" id="state" runat="server" />
-            </div>
+              <input type="text" id="state" class="form-control" runat="server">
+              </input>
+             </div>
             <div class="form-group col-md-2">
               <label for="inputZip">Pincode</label>
               <input type="text" class="form-control" id="pincode" runat="server">
