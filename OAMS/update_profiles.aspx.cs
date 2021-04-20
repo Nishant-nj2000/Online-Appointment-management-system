@@ -84,10 +84,10 @@ namespace OAMS
                 cmd.Parameters.Add("@emailid", MySqlDbType.VarString).Value = email.Value;
                 cmd.Parameters.Add("@phone", MySqlDbType.VarString).Value = phone.Value;
                 cmd.Parameters.Add("@gender", MySqlDbType.VarString).Value = gender.Value;
-                cmd.Parameters.Add("@password", MySqlDbType.VarString).Value = email.Value;
-                cmd.Parameters.Add("@city", MySqlDbType.VarString).Value = email.Value;
-                cmd.Parameters.Add("@state", MySqlDbType.VarString).Value = email.Value;
-                cmd.Parameters.Add("@pincode", MySqlDbType.VarString).Value = email.Value;
+                cmd.Parameters.Add("@password", MySqlDbType.VarString).Value = password.Value;
+                cmd.Parameters.Add("@city", MySqlDbType.VarString).Value = city.Value;
+                cmd.Parameters.Add("@state", MySqlDbType.VarString).Value = state.Value;
+                cmd.Parameters.Add("@pincode", MySqlDbType.VarString).Value = pincode.Value;
 
 
                 /* cmd = new MySql.Data.MySqlClient.MySqlCommand(queryStr, connection);*/
