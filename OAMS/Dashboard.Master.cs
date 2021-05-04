@@ -19,9 +19,21 @@ namespace OAMS
             Session.RemoveAll();
             Response.Redirect("~/Login.aspx");
         }
-        protected void logoutclck(object sender, EventArgs e)
+
+        protected void lb13_click(object sender, EventArgs e)
         {
-            MessageBox.Show("MADHAV");
+            Response.Redirect("~/update_profiles.aspx");
         }
+        protected void lb14_click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/View_consultants.aspx");
+        }
+        protected void lb15_click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/View_users.aspx");
+        }
+
+
+
     }
 }
