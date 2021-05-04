@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true"  MasterPageFile="~/Dashboard.Master"  CodeBehind="View_users.aspx.cs" Inherits="OAMS.View_users" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true"  MasterPageFile="~/Dashboard.Master"  CodeBehind="View_users.aspx.cs" Inherits="OAMS.View_users" EnableEventValidation ="False"%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="cpmain" runat="server">
 <!DOCTYPE html>
