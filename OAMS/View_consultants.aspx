@@ -89,64 +89,8 @@
                     </td>
                 </tr>  
             </ItemTemplate>  
-            <SeparatorTemplate>  
-                <tr>  
-                    <td>  
-                        <hr />  
-                    </td>  
-                    <td>  
-                        <hr />  
-                    </td>  
-                    <td>  
-                        <hr />  
-                    </td>  
-                </tr>  
-            </SeparatorTemplate>  
-            <AlternatingItemTemplate>  
-                <tr>  
-                    <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.Name")%>  
-                    </td>  
-                    <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.Email_ID")%>  
-                    </td>  
-                    <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.Phone_No")%>  
-                    </td>  
-
-                    <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.Gender")%>  
-                    </td>  
-                    <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.DOB")%>  
-                    </td>  
-                    <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.City")%>  
-                    </td>  
-                    <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.State")%>  
-                    </td>  
-                    <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.Pincode")%>  
-                    </td>  
-                    <td>
-                        <asp:LinkButton ID="LinkButton2" runat="server" CssClass="btn btn-primary"><%#DataBinder.Eval(Container,"DataItem.Activation")%></asp:LinkButton>
-                    </td>
-                </tr>  
-            </AlternatingItemTemplate>  
-            <SeparatorTemplate>  
-                <tr>  
-                    <td>  
-                        <hr />  
-                    </td>  
-                    <td>  
-                        <hr />  
-                    </td>  
-                    <td>  
-                        <hr />  
-                    </td>  
-                </tr>  
-            </SeparatorTemplate>  
+           
+          
             <FooterTemplate>  
                
                 </table>  
