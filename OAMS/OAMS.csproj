@@ -431,6 +431,8 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="View_consultants.aspx" />
+    <Content Include="View_users.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -532,6 +534,20 @@
     </Compile>
     <Compile Include="update_profiles.aspx.designer.cs">
       <DependentUpon>update_profiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View_consultants.aspx.cs">
+      <DependentUpon>View_consultants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_consultants.aspx.designer.cs">
+      <DependentUpon>View_consultants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View_users.aspx.cs">
+      <DependentUpon>View_users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_users.aspx.designer.cs">
+      <DependentUpon>View_users.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

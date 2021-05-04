@@ -87,24 +87,6 @@ namespace OAMS
         protected global::System.Web.UI.WebControls.LinkButton LinkButton5;
 
         /// <summary>
-        /// logout control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton logout;
-
-        /// <summary>
-        /// cpmain control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cpmain;
-
-        /// <summary>
         /// LinkButton7 control.
         /// </summary>
         /// <remarks>
@@ -157,24 +139,6 @@ namespace OAMS
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButton12;
-
-        /// <summary>
-        /// LinkButton19 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton19;
-
-        /// <summary>
-        /// ContentPlaceHolder1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
 
         /// <summary>
         /// LinkButton13 control.
@@ -231,21 +195,21 @@ namespace OAMS
         protected global::System.Web.UI.WebControls.LinkButton LinkButton18;
 
         /// <summary>
-        /// LinkButton20 control.
+        /// logout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton20;
+        protected global::System.Web.UI.WebControls.LinkButton logout;
 
         /// <summary>
-        /// ContentPlaceHolder2 control.
+        /// cpmain control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder2;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder cpmain;
     }
 }
