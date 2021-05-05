@@ -19,9 +19,6 @@ namespace OAMS
             Session.RemoveAll();
             Response.Redirect("~/Login.aspx");
         }
-        protected void logoutclck(object sender, EventArgs e)
-        {
-            MessageBox.Show("MADHAV");
-        }
+        
     }
 }
