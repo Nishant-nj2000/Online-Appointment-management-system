@@ -4,7 +4,7 @@
     <div class="container mb-5">
         <center><h2>Update Profile</h2></center>
     </div>
-    <div class="container" style="border-style:solid;border-color:black;background-color:white;">
+    <div class="container" style="border-style:solid;border-color:black; border-radius:10px; background-color:white;">
         
 
         

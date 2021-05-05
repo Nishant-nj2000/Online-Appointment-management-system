@@ -19,6 +19,23 @@ namespace OAMS
             Session.RemoveAll();
             Response.Redirect("~/Login.aspx");
         }
-        
+
+
+        protected void lb13_click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/update_profiles.aspx");
+        }
+        protected void lb14_click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/View_consultants.aspx");
+        }
+        protected void lb15_click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/View_users.aspx");
+        }
+
+
+
+
     }
 }
