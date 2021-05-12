@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="Customer_Registration.aspx.cs" Inherits="OAMS.Customer_Registration" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site1.Master" CodeBehind="Customer_Registration.aspx.cs" Inherits="OAMS.Customer_Registration" %>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
-    <div class="container-fluid col d-flex justify-content-center" >
+    <div class="container-fluid col-9  justify-content-center" >
       <div class="row">
-         <div class="col-md-14">
-            <div class="card">
+         <div class="col-md-12">
+            <div class="card shadow-lg">
                <div class="card-body">
 
                   <div class="row">
@@ -80,7 +80,18 @@
                         </div>
                      </div>
                     
-                    <div class="col-lg-6">
+                    <div class="col-md-6">
+                        <label>Pincode</label>
+                        <div class="form-group">
+                           <asp:TextBox CssClass="form-control" ID="TextBox13" runat="server" placeholder="Pincode"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Required!" ControlToValidate="TextBox13" ForeColor="Red"></asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ErrorMessage="Invalid Pincode Entered !" ControlToValidate="TextBox13" ValidationExpression="[0-9]{6}" ForeColor="Red"></asp:RegularExpressionValidator>
+                        </div>
+                     </div>
+                  </div>
+
+                   <div class="row">
+                       <div class="col-md-12">
                         <label>Address</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox8" runat="server" placeholder="Address" TextMode="MultiLine"></asp:TextBox>
@@ -88,6 +99,7 @@
                         </div>
                      </div>
                   </div>
+
                   <div class="row">
                        <div class="col-md-6">
                         <label>City</label>
@@ -139,16 +151,7 @@
                     
                     
                   </div>
-                   <div class="row">
-                      <div class="col-md-6">
-                        <label>Pincode</label>
-                        <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox13" runat="server" placeholder="Pincode"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Required!" ControlToValidate="TextBox13" ForeColor="Red"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ErrorMessage="Invalid Pincode Entered !" ControlToValidate="TextBox13" ValidationExpression="[0-9]{6}" ForeColor="Red"></asp:RegularExpressionValidator>
-                        </div>
-                     </div>
-                  </div>
+                   
                   <div class="row">
                      <div class="col-md-6">
                         <label>Create Password</label>
@@ -168,15 +171,15 @@
                      </div>
                   </div>
                    <br />
-                  <div class="row">
-                     <div class="col-6">
-                           <div class="form-group">
-                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" />
+                  <div class="row justify-content-center">
+                     <div class="col-2">
+                           <div class="form-group text-center">
+                              <asp:Button class="btn btn-primary " ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" />
                            </div>
                      </div>
-                      <div class="col-6">
-                           <div class="form-group">
-                               <asp:Button class="btn btn-danger btn-block btn-lg" ID="Button4" runat="server" Text="Cancel"/>
+                      <div class="col-2">
+                           <div class="form-group text-center">
+                               <asp:Button class="btn btn-danger" ID="Button4" runat="server" Text="Cancel"/>
                            </div>
                      </div>
                   </div>
@@ -187,4 +190,6 @@
          
       </div>
    </div>
+
+    <br /><br />
 </asp:Content>
