@@ -456,7 +456,7 @@
     </Compile>
     <Compile Include="approveAppointment.aspx.designer.cs">
       <DependentUpon>approveAppointment.aspx</DependentUpon>
-
+     </Compile>
     <Compile Include="admincomplaints.aspx.cs">
       <DependentUpon>admincomplaints.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -488,14 +488,13 @@
     </Compile>
     <Compile Include="book_appointment.aspx.designer.cs">
       <DependentUpon>book_appointment.aspx</DependentUpon>
-
+  	</Compile>
     <Compile Include="Consultant_Complaint.aspx.cs">
       <DependentUpon>Consultant_Complaint.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Consultant_Complaint.aspx.designer.cs">
       <DependentUpon>Consultant_Complaint.aspx</DependentUpon>
-
     </Compile>
     <Compile Include="Consultant_Registration.aspx.cs">
       <DependentUpon>Consultant_Registration.aspx</DependentUpon>
@@ -592,7 +591,7 @@
     </Compile>
     <Compile Include="viewAppointment.aspx.designer.cs">
       <DependentUpon>viewAppointment.aspx</DependentUpon>
-
+  	</Compile>
     <Compile Include="User_Complaint.aspx.cs">
       <DependentUpon>User_Complaint.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -46,7 +46,7 @@ namespace OAMS
         {
             Response.Redirect("~/viewAppointment.aspx");
         }
-       }
+
 
 
         protected void lb2_click(object sender, EventArgs e)
@@ -70,7 +70,6 @@ namespace OAMS
         {
             Response.Redirect("~/Consultant_Complaint.aspx");
         }
-
 
     }
 
