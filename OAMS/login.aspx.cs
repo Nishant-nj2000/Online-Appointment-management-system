@@ -47,6 +47,7 @@ namespace OAMS
                     Session["Role"] = result.GetString(14);
                     Session["Name"] = result.GetString(2);
                     Session["Email"] = result.GetString(3);
+                    Session["uid"] = result.GetString(1);
                     Response.Redirect("update_profiles.aspx");
                 }
                 else

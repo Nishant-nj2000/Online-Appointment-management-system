@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site1.Master" CodeBehind="login.aspx.cs" Inherits="OAMS.login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site1.Master" CodeBehind="login.aspx.cs" Inherits="OAMS.login"  %>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br /><br />
@@ -10,7 +10,7 @@
                   <div class="row">
                      <div class="col text-center">
                         
-                           <img width="150px" src="images/generaluser.png"/>
+                           <img width="150" src="images/generaluser.png"/>
                         
                      </div>
                   </div>

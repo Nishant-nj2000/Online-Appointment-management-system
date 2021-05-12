@@ -33,6 +33,7 @@ namespace OAMS
         {
             Response.Redirect("~/View_users.aspx");
         }
+
         protected void updateSchedule(object sender, EventArgs e)
         {
             Response.Redirect("~/updateSchedule.aspx");
@@ -46,4 +47,31 @@ namespace OAMS
             Response.Redirect("~/viewAppointment.aspx");
         }
        }
+
+
+        protected void lb2_click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/book_appointment.aspx");
+        }
+
+        protected void user_feedback(object sender, EventArgs e)
+        {
+            Response.Redirect("~/User_feedback.aspx");
+        }
+        protected void user_complaint(object sender, EventArgs e)
+        {
+            Response.Redirect("~/User_Complaint.aspx");
+        }
+        protected void user_appointment(object sender, EventArgs e)
+        {
+            Response.Redirect("~/User_viewappointment.aspx");
+        }
+        protected void Consultant_Complaint(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Consultant_Complaint.aspx");
+        }
+
+
+    }
+
 }

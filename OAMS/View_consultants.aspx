@@ -10,12 +10,12 @@
     <title></title>
 </head>
 <body>
-   <form id="form1">
+   
        <center><h3>List of Consultants</h3></center>
     <div>  
         <asp:Repeater ID="RepeatInformation" runat="server">  
             <HeaderTemplate>  
-                <table border="2" class="table" style="background-color:white;">  
+                <table border="1" style="border-radius:5px;" class="table table-responsive table-striped">  
                     <thead class="thead-dark">
                     <tr>  
                          
@@ -52,41 +52,69 @@
                             </th> 
 
                             <th scope="col">  
-                                Status 
+                                Current Status 
                             </th> 
-                         
+                            
+                            <th scope="col">  
+                                Change Status 
+                            </th>
+                            
+                            <th scope="col">  
+                                View Complaints  
+                            </th>
+                            
+                            <th scope="col">  
+                                View Feedbacks 
+                            </th>
                     </tr>
                    </thead>
             </HeaderTemplate>  
             <ItemTemplate>  
                 <tr class="tblrowcolor">  
-                    <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.Name")%>  
+                    <td class="text-nowrap">  
+                        <%#Eval("Name")%>  
+                        <asp:TextBox class="form-group" ID="name" Visible="false" name="name" text='<%#Eval("Name")%>'  runat="server"></asp:TextBox>
                     </td>  
                     <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.Email_ID")%>  
+                        <%#Eval("Email_ID")%>  
                     </td>  
                     <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.Phone_No")%>  
+                        <%#Eval("Phone_No")%>  
                     </td>  
 
                     <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.Gender")%>  
+                        <%#Eval("Gender")%>  
+                    </td>  
+                    <td class="text-nowrap">  
+                        <%#Eval("DOB","{0:dd-MM-yyyy}")%>  
                     </td>  
                     <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.DOB")%>  
+                        <%#Eval("City")%>  
                     </td>  
                     <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.City")%>  
+                        <%#Eval("State")%>  
                     </td>  
                     <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.State")%>  
-                    </td>  
-                    <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.Pincode")%>  
+                        <%#Eval("Pincode")%>  
                     </td>  
                     <td>
-                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-primary"><%#DataBinder.Eval(Container,"DataItem.Activation")%></asp:LinkButton>
+                        <%# Eval("Activation").ToString()=="Activated" ? "<asp:LinkButton id='LinkButton1' runat='server' class='btn btn-block btn-primary'> Activated </asp:LinkButton>" : "<asp:LinkButton id='LinkButton2' class='btn btn-block btn-danger' runat='server'> Deactivated </asp:LinkButton>" %>
+                    </td> 
+
+                    <td>
+                         
+                        <asp:button class="btn btn-outline-dark" runat="server" name="change" type="submit" Text="Change" OnClick="changestatus" ></asp:button>
+                        <asp:TextBox class="form-group" ID="uid" Visible="false" name="uid" text='<%#Eval("UID")%>'  runat="server"></asp:TextBox>
+                        <asp:TextBox class="form-group" ID="activation" Visible="false" name="activation" text='<%#Eval("Activation")%>'  runat="server"></asp:TextBox>
+                        
+                    </td>
+
+                     <td>
+                        <asp:button class="btn btn-info" runat="server" name="complaints" type="submit" Text="Complaints" OnClick="admincomplaints"></asp:button>
+                    </td>
+
+                    <td>
+                        <asp:button class="btn btn-info" runat="server" name="feedbacks" type="submit" Text="Feedbacks" OnClick="adminfeedbacks"></asp:button>
                     </td>
                 </tr>  
             </ItemTemplate>  
@@ -98,7 +126,7 @@
             </FooterTemplate>  
         </asp:Repeater>  
     </div>  
-    </form>  
+   
 </body>
 </html>
 </asp:Content>
