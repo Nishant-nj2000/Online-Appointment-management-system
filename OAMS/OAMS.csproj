@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="approveAppointment.aspx" />
     <Content Include="book_appointment.aspx" />
     <Content Include="Consultant_Complaint.aspx" />
     <Content Include="admincomplaints.aspx" />
@@ -236,6 +237,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="updateSchedule.aspx" />
     <Content Include="update_profiles.aspx" />
     <Content Include="dashboardcss\assets\css\material-dashboard.css.map" />
     <Content Include="dashboardcss\assets\js\material-dashboard.js.map" />
@@ -435,6 +437,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="viewAppointment.aspx" />
     <Content Include="User_Complaint.aspx" />
     <Content Include="User_feedback.aspx" />
     <Content Include="User_viewappointment.aspx" />
@@ -446,6 +449,14 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="approveAppointment.aspx.cs">
+      <DependentUpon>approveAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="approveAppointment.aspx.designer.cs">
+      <DependentUpon>approveAppointment.aspx</DependentUpon>
+
     <Compile Include="admincomplaints.aspx.cs">
       <DependentUpon>admincomplaints.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -459,6 +470,7 @@
     </Compile>
     <Compile Include="adminfeedbacks.aspx.designer.cs">
       <DependentUpon>adminfeedbacks.aspx</DependentUpon>
+
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -566,6 +578,21 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+
+    <Compile Include="updateSchedule.aspx.cs">
+      <DependentUpon>updateSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateSchedule.aspx.designer.cs">
+      <DependentUpon>updateSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewAppointment.aspx.cs">
+      <DependentUpon>viewAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewAppointment.aspx.designer.cs">
+      <DependentUpon>viewAppointment.aspx</DependentUpon>
+
     <Compile Include="User_Complaint.aspx.cs">
       <DependentUpon>User_Complaint.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -586,6 +613,7 @@
     </Compile>
     <Compile Include="User_viewappointment.aspx.designer.cs">
       <DependentUpon>User_viewappointment.aspx</DependentUpon>
+
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
