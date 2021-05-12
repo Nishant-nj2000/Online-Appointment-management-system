@@ -51,7 +51,7 @@
                 </ul>
                 <ul class="nav">
                     <li class="nav-item active  ">
-                        <asp:LinkButton ID="LinkButton2" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-calendar" aria-hidden="true"></i> Book Appointment </asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton2" runat="server" Width="230px" OnClick="lb2_click" Font-Size="Medium"> <i class="fa fa-calendar" aria-hidden="true"></i> Book Appointment </asp:LinkButton>
                     </li>
                     <!-- your sidebar here -->
                 </ul>

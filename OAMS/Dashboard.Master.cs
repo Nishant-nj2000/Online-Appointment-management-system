@@ -32,7 +32,10 @@ namespace OAMS
         {
             Response.Redirect("~/View_users.aspx");
         }
-
+        protected void lb2_click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/book_appointment.aspx");
+        }
 
 
     }
