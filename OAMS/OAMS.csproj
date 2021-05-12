@@ -152,6 +152,9 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="book_appointment.aspx" />
+    <Content Include="Consultant_Complaint.aspx" />
+    <Content Include="admincomplaints.aspx" />
+    <Content Include="adminfeedbacks.aspx" />
     <Content Include="Consultant_Registration.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -161,6 +164,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Customcss\footer.css" />
     <Content Include="Customer_Registration.aspx" />
+    <Content Include="c_admincomplaints.aspx" />
     <Content Include="dashboardcss\assets\css\material-dashboard-rtl.css" />
     <Content Include="dashboardcss\assets\css\material-dashboard.css" />
     <Content Include="dashboardcss\assets\css\material-dashboard.min.css" />
@@ -431,6 +435,9 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="User_Complaint.aspx" />
+    <Content Include="User_feedback.aspx" />
+    <Content Include="User_viewappointment.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="View_consultants.aspx" />
     <Content Include="View_users.aspx" />
@@ -439,6 +446,20 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admincomplaints.aspx.cs">
+      <DependentUpon>admincomplaints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admincomplaints.aspx.designer.cs">
+      <DependentUpon>admincomplaints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminfeedbacks.aspx.cs">
+      <DependentUpon>adminfeedbacks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminfeedbacks.aspx.designer.cs">
+      <DependentUpon>adminfeedbacks.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -448,12 +469,21 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+
     <Compile Include="book_appointment.aspx.cs">
       <DependentUpon>book_appointment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="book_appointment.aspx.designer.cs">
       <DependentUpon>book_appointment.aspx</DependentUpon>
+
+    <Compile Include="Consultant_Complaint.aspx.cs">
+      <DependentUpon>Consultant_Complaint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultant_Complaint.aspx.designer.cs">
+      <DependentUpon>Consultant_Complaint.aspx</DependentUpon>
+
     </Compile>
     <Compile Include="Consultant_Registration.aspx.cs">
       <DependentUpon>Consultant_Registration.aspx</DependentUpon>
@@ -475,6 +505,13 @@
     </Compile>
     <Compile Include="Customer_Registration.aspx.designer.cs">
       <DependentUpon>Customer_Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_admincomplaints.aspx.cs">
+      <DependentUpon>c_admincomplaints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="c_admincomplaints.aspx.designer.cs">
+      <DependentUpon>c_admincomplaints.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.Master.cs">
       <DependentUpon>Dashboard.Master</DependentUpon>
@@ -528,6 +565,27 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Complaint.aspx.cs">
+      <DependentUpon>User_Complaint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Complaint.aspx.designer.cs">
+      <DependentUpon>User_Complaint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_feedback.aspx.cs">
+      <DependentUpon>User_feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_feedback.aspx.designer.cs">
+      <DependentUpon>User_feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_viewappointment.aspx.cs">
+      <DependentUpon>User_viewappointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_viewappointment.aspx.designer.cs">
+      <DependentUpon>User_viewappointment.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
