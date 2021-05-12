@@ -58,19 +58,19 @@
                 </ul>
                 <ul class="nav">
                     <li class="nav-item active  ">
-                        <asp:LinkButton ID="LinkButton3" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-calendar" aria-hidden="true"></i> View Appointment </asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton3" runat="server" Width="230px" Font-Size="Medium" OnClick="user_appointment"> <i class="fa fa-calendar" aria-hidden="true"></i> View Appointment </asp:LinkButton>
                     </li>
                     <!-- your sidebar here -->
                 </ul>
                 <ul class="nav">
                     <li class="nav-item active  ">
-                        <asp:LinkButton ID="LinkButton4" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-comments-o" aria-hidden="true"></i> Feedback </asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton4" runat="server" Width="230px" Font-Size="Medium" OnClick="user_feedback"> <i class="fa fa-comments-o" aria-hidden="true"></i> Feedback </asp:LinkButton>
                     </li>
                     <!-- your sidebar here -->
                 </ul>
                 <ul class="nav">
                     <li class="nav-item active  ">
-                        <asp:LinkButton ID="LinkButton5" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Complaint </asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton5" runat="server" Width="230px" Font-Size="Medium" OnClick="user_complaint"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Complaint </asp:LinkButton>
                     </li>
                     <!-- your sidebar here -->
                 </ul>
@@ -114,7 +114,7 @@
                     </ul>
                     <ul class="nav">
                       <li class="nav-item active  ">
-                         <asp:LinkButton ID="LinkButton12" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Complaint</asp:LinkButton>
+                         <asp:LinkButton ID="LinkButton12" runat="server" Width="230px" Font-Size="Medium" OnClick="Consultant_Complaint"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Complaint</asp:LinkButton>
                       </li>
                       <!-- your sidebar here -->
                     </ul>
