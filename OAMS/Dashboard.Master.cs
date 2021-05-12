@@ -33,9 +33,17 @@ namespace OAMS
         {
             Response.Redirect("~/View_users.aspx");
         }
-
-
-
-
-    }
+        protected void updateSchedule(object sender, EventArgs e)
+        {
+            Response.Redirect("~/updateSchedule.aspx");
+        }
+        protected void approveAppointment(object sender, EventArgs e)
+        {
+            Response.Redirect("~/approveAppointment.aspx");
+        }
+        protected void viewAppointment(object sender, EventArgs e)
+        {
+            Response.Redirect("~/viewAppointment.aspx");
+        }
+       }
 }

@@ -95,19 +95,19 @@
                     </ul>
                     <ul class="nav">
                       <li class="nav-item active  ">
-                         <asp:LinkButton ID="LinkButton9" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-calendar-check-o" aria-hidden="true"></i> Update Schedule</asp:LinkButton>
+                         <asp:LinkButton ID="LinkButton9" runat="server" Width="230px" Font-Size="Medium" OnClick="updateSchedule"> <i class="fa fa-calendar-check-o" aria-hidden="true"></i> Update Schedule</asp:LinkButton>
                       </li>
                       <!-- your sidebar here -->
                     </ul>
                     <ul class="nav">
                       <li class="nav-item active  ">
-                         <asp:LinkButton ID="LinkButton10" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-check" aria-hidden="true"></i> Approve Appointment</asp:LinkButton>
+                         <asp:LinkButton ID="LinkButton10" runat="server" Width="230px" Font-Size="Medium" OnClick="approveAppointment"> <i class="fa fa-check" aria-hidden="true"></i> Approve Appointment</asp:LinkButton>
                       </li>
                       <!-- your sidebar here -->
                     </ul>
                      <ul class="nav">
                       <li class="nav-item active  ">
-                         <asp:LinkButton ID="LinkButton11" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-calendar" aria-hidden="true"></i> View Appointment</asp:LinkButton>
+                         <asp:LinkButton ID="LinkButton11" runat="server" Width="230px" Font-Size="Medium" OnClick="viewAppointment"> <i class="fa fa-calendar" aria-hidden="true"></i> View Appointment</asp:LinkButton>
                       </li>
                       <!-- your sidebar here -->
                     </ul>
