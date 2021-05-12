@@ -151,6 +151,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="admincomplaints.aspx" />
+    <Content Include="adminfeedbacks.aspx" />
     <Content Include="Consultant_Registration.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -160,6 +162,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Customcss\footer.css" />
     <Content Include="Customer_Registration.aspx" />
+    <Content Include="c_admincomplaints.aspx" />
     <Content Include="dashboardcss\assets\css\material-dashboard-rtl.css" />
     <Content Include="dashboardcss\assets\css\material-dashboard.css" />
     <Content Include="dashboardcss\assets\css\material-dashboard.min.css" />
@@ -438,6 +441,20 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admincomplaints.aspx.cs">
+      <DependentUpon>admincomplaints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admincomplaints.aspx.designer.cs">
+      <DependentUpon>admincomplaints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminfeedbacks.aspx.cs">
+      <DependentUpon>adminfeedbacks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminfeedbacks.aspx.designer.cs">
+      <DependentUpon>adminfeedbacks.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -467,6 +484,13 @@
     </Compile>
     <Compile Include="Customer_Registration.aspx.designer.cs">
       <DependentUpon>Customer_Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_admincomplaints.aspx.cs">
+      <DependentUpon>c_admincomplaints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="c_admincomplaints.aspx.designer.cs">
+      <DependentUpon>c_admincomplaints.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.Master.cs">
       <DependentUpon>Dashboard.Master</DependentUpon>
