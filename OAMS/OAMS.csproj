@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="book_appointment.aspx" />
     <Content Include="Consultant_Complaint.aspx" />
     <Content Include="admincomplaints.aspx" />
     <Content Include="adminfeedbacks.aspx" />
@@ -468,12 +469,21 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+
+    <Compile Include="book_appointment.aspx.cs">
+      <DependentUpon>book_appointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="book_appointment.aspx.designer.cs">
+      <DependentUpon>book_appointment.aspx</DependentUpon>
+
     <Compile Include="Consultant_Complaint.aspx.cs">
       <DependentUpon>Consultant_Complaint.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Consultant_Complaint.aspx.designer.cs">
       <DependentUpon>Consultant_Complaint.aspx</DependentUpon>
+
     </Compile>
     <Compile Include="Consultant_Registration.aspx.cs">
       <DependentUpon>Consultant_Registration.aspx</DependentUpon>
