@@ -36,7 +36,7 @@ namespace OAMS
 
         protected void changestatus(object sender, EventArgs e)
         {
-            RepeaterItem item = (sender as Button).NamingContainer as RepeaterItem;
+            RepeaterItem item = (sender as LinkButton).NamingContainer as RepeaterItem;
             TextBox uid = item.FindControl("uid") as TextBox;
             TextBox activation = item.FindControl("activation") as TextBox;
             TextBox name = item.FindControl("name") as TextBox;

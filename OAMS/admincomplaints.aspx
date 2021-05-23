@@ -24,7 +24,7 @@
                                 Complaint Description 
                             </th> 
                             <th scope="col">  
-                                Complaint From 
+                                Complaint From (User Id)
                             </th> 
 
                     </tr>

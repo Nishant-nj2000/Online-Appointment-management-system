@@ -71,6 +71,17 @@ namespace OAMS
             Response.Redirect("~/Consultant_Complaint.aspx");
         }
 
+        protected void profession_click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/manage_profession.aspx");
+        }
+
+        protected void qualification_click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/manage_qualification.aspx");
+        }
+
+
     }
 
 }

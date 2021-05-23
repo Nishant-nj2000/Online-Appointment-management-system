@@ -62,7 +62,7 @@
                         <div class="form-group">
                            <asp:Textbox CssClass="form-control" ID="TextBox4" runat="server" placeholder="DOB" TextMode="Date" ControlToCompare="TextBox4"></asp:Textbox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox4" ErrorMessage="Required!" ForeColor="Red" ControlToCompare="TextBox4"></asp:RequiredFieldValidator>
-                            <asp:CompareValidator ID="CompareValidator1" runat="server" errormessage="The date must be less than today" ControlToValidate="TextBox4" Operator="LessThan" ForeColor="Red" ValueToCompare="<%# DateTime.Today.ToShortDateString() %>"></asp:CompareValidator>
+                            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="TextBox4" Operator="LessThan" ForeColor="Red"></asp:CompareValidator>
                         </div>
                      </div>
                     
@@ -72,17 +72,7 @@
                      <div class="col-md-4">
                         <label>Specialization</label>
                         <div class="form-group">
-                           <asp:ListBox runat="server" SelectionMode="Multiple" Width="250px" ID="ListBox1">
-                               <asp:ListItem Text="Health care consulting"></asp:ListItem>
-                               <asp:ListItem Text="Strategy consulting"></asp:ListItem>
-                               <asp:ListItem Text="Process improvement"></asp:ListItem>
-                               <asp:ListItem Text="Human resources consulting"></asp:ListItem>
-                               <asp:ListItem Text="Financial management consulting"></asp:ListItem>
-                               <asp:ListItem Text="Banking"></asp:ListItem>
-                               <asp:ListItem Text="Manufacturing"></asp:ListItem>
-                               <asp:ListItem Text="Information Techology"></asp:ListItem>
-                               <asp:ListItem Text="Transportation"></asp:ListItem>
-                               <asp:ListItem Text="Others"></asp:ListItem>
+                           <asp:ListBox runat="server" SelectionMode="Multiple" Width="250px" ID="ListBox1" Rows="5">
                             </asp:ListBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="ListBox1" ErrorMessage="Required!" ForeColor="Red"></asp:RequiredFieldValidator>
                         </div>
@@ -92,14 +82,7 @@
                     <div class="col-md-4">
                         <label>Qualification</label>
                         <div class="form-group">
-                           <asp:ListBox runat="server" SelectionMode="Multiple" Width="250px" ID="ListBox2">
-                               <asp:ListItem Text="Business"></asp:ListItem>
-                               <asp:ListItem Text="Economics"></asp:ListItem>
-                               <asp:ListItem Text="Engineering"></asp:ListItem>
-                               <asp:ListItem Text="Finance"></asp:ListItem>
-                               <asp:ListItem Text="Mathematics"></asp:ListItem>
-                               <asp:ListItem Text="Science"></asp:ListItem>
-                               <asp:ListItem Text="Others"></asp:ListItem>
+                           <asp:ListBox runat="server" SelectionMode="Multiple" Width="300px" ID="ListBox2">
                             </asp:ListBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="ListBox2" ErrorMessage="Required!" ForeColor="Red"></asp:RequiredFieldValidator>
                         </div>
