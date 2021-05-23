@@ -186,15 +186,6 @@ namespace OAMS
         protected global::System.Web.UI.WebControls.LinkButton LinkButton17;
 
         /// <summary>
-        /// LinkButton18 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton18;
-
-        /// <summary>
         /// logout control.
         /// </summary>
         /// <remarks>

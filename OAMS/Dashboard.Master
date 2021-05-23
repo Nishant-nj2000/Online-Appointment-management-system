@@ -7,6 +7,7 @@
      <!--     Fonts and icons dashboard  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <!-- Material Kit CSS for dashboard-->
   <link href="dashboardcss/assets/css/material-dashboard.css" rel="stylesheet" />
 
@@ -144,22 +145,17 @@
                     </ul>
                     <ul class="nav">
                       <li class="nav-item active  ">
-                        <asp:LinkButton ID="LinkButton16" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-tasks" aria-hidden="true"></i> Manage Professions </asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton16" runat="server" Width="230px" Font-Size="Medium" OnClick="profession_click"> <i class="fa fa-tasks" aria-hidden="true"></i> Manage Professions and Specialization </asp:LinkButton>
                       </li>
                       <!-- your sidebar here -->
                     </ul>
                      <ul class="nav">
                       <li class="nav-item active  ">
-                        <asp:LinkButton ID="LinkButton17" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-graduation-cap" aria-hidden="true"></i> Manage Qualifications </asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton17" runat="server" Width="230px" Font-Size="Medium" OnClick="qualification_click"> <i class="fa fa-graduation-cap" aria-hidden="true"></i> Manage Qualifications </asp:LinkButton>
                       </li>
                       <!-- your sidebar here -->
                     </ul>
-                    <ul class="nav">
-                      <li class="nav-item active  ">
-                        <asp:LinkButton ID="LinkButton18" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-bar-chart" aria-hidden="true"></i> Generate Reports </asp:LinkButton>
-                      </li>
-                      <!-- your sidebar here -->
-                    </ul>
+                   
                   </div>
                         
             <% } %>
@@ -168,7 +164,7 @@
         
         <div class="main-panel">
           <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+         <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
             <div class="container-fluid">
               <div class="navbar-wrapper">
                 <a class="navbar-brand" href="#0"> <% if (utmid == "4") { %> User Dashboard <% } %>  
