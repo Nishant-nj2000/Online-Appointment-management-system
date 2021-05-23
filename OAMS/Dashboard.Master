@@ -39,12 +39,7 @@
             <% if (utmid == "4") {  %>
 
             <div class="sidebar-wrapper">
-                <ul class="nav">
-                    <li class="nav-item active  ">
-                        <asp:LinkButton ID="LinkButton6" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-key" aria-hidden="true"></i> Update Password </asp:LinkButton>
-                    </li>
-                    <!-- your sidebar here -->
-                </ul>
+                
                 <ul class="nav">
                     <li class="nav-item active  ">
                         <asp:LinkButton ID="LinkButton1" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-user-circle-o" aria-hidden="true"></i> Update Profile</asp:LinkButton>
@@ -83,12 +78,7 @@
             <% else if (utmid == "3") { %>
             
                <div class="sidebar-wrapper">
-                    <ul class="nav">
-                      <li class="nav-item active  ">
-                        <asp:LinkButton ID="LinkButton7" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-key" aria-hidden="true"></i> Update Password </asp:LinkButton>
-                      </li>
-                      <!-- your sidebar here -->
-                    </ul>
+                   
                     <ul class="nav">
                       <li class="nav-item active  ">
                         <asp:LinkButton ID="LinkButton8" runat="server" Width="230px" Font-Size="Medium"> <i class="fa fa-user-circle-o" aria-hidden="true"></i> Update Profile</asp:LinkButton>

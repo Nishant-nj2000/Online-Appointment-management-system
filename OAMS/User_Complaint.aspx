@@ -37,7 +37,7 @@
 					<div class="row">
 						<div class="col-md-6"><h4>Appointment Time : <%#DataBinder.Eval(Container,"DataItem.time")%></h4> </div>
 						<div class="col-md-6">
-							<asp:DropDownList class="custom-select" ID="DropDownList1" name="type" runat="server">
+							<asp:DropDownList class="custom-select" ID="type" name="type" runat="server">
 									<asp:ListItem Value="0" >-- Select --</asp:ListItem>
 									<asp:ListItem Value="Address Related">Address Related</asp:ListItem>
 									<asp:ListItem Value="Fees Related">Fees Related</asp:ListItem>
@@ -50,8 +50,8 @@
 
 					<div class="row">
 						<div class="col-12"> 
-							<asp:TextBox TextMode="MultiLine" class="form-group" style="width:100%;" ID="TextBox2" name="desc" runat="server" Rows="4" ></asp:TextBox>
-							<asp:TextBox class="form-group" ID="TextBox1" Visible="false" name="uuid" text='<%#DataBinder.Eval(Container,"DataItem.uid")%>'  runat="server"></asp:TextBox> 
+							<asp:TextBox TextMode="MultiLine" class="form-group" style="width:100%;" ID="desc" name="desc" runat="server" Rows="4" ></asp:TextBox>
+							<asp:TextBox class="form-group" ID="uuid" Visible="false" name="uuid" text='<%#DataBinder.Eval(Container,"DataItem.uid")%>'  runat="server"></asp:TextBox> 
 						</div>
 					</div>
 
