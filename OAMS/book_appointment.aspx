@@ -73,10 +73,13 @@
             </div>
             <hr />
             <div class="row text-center">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <h4 class="badge badge-pill badge-info" style="font-size:20px;"><i class="fa fa-phone" aria-hidden="true"></i> <%#DataBinder.Eval(Container,"DataItem.Phone_No")%></h4>
                 </div>
-                <div class="col-md-6">
+                 <div class="col-md-4">
+                    <h4 class="badge badge-pill badge-info" style="font-size:20px;"></i> Monday - Saturday  <%#DataBinder.Eval(Container,"DataItem.Start_Time")%> - <%#DataBinder.Eval(Container,"DataItem.End_Time")%></h4>
+                </div>
+                <div class="col-md-4">
                     <h4 class="badge badge-pill badge-info" style="font-size:20px;"><i class="fa fa-envelope" aria-hidden="true"></i> <%#DataBinder.Eval(Container,"DataItem.Email_ID")%></h4>
                 </div>                
             </div>
