@@ -21,84 +21,50 @@
 	<!-- Card Start -->
 	<div class="card" >
 		<div class="card-body">		
-			<table class="tabel table-striped table-hover">
-							<thead>
-								<tr>
-									<th>
-									Consultant Name :
-								</th>
-								<th>
-								<%#DataBinder.Eval(Container,"DataItem.Name")%>
-								</th>
-								</tr>
-								
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										Email Id :
-									</td>
-									<td>
-										<%#DataBinder.Eval(Container,"DataItem.Email_Id")%> 
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Appointment Date :
-									</td>
-									<td>
-										<%#DataBinder.Eval(Container,"DataItem.AppDate")%> 
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Appointment Time :
-									</td>
-									<td>
-										<%#DataBinder.Eval(Container,"DataItem.time")%> 
-									</td>
-								</tr>
-								   
-							<tr>
-								<th scope="row">Type :</th>
-								<td>
-									<asp:DropDownList ID="type" name="type" runat="server">
+
+			<div class="row">
+				<div class="col-12">
+
+					<div class="row">
+						<div class="col-md-12"><h3 style="background-color:grey; color:white;"> &nbsp<%#DataBinder.Eval(Container,"DataItem.Name")%></h3></div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6"><h4>Email Id : <%#DataBinder.Eval(Container,"DataItem.Email_Id")%></h4>  </div>
+						<div class="col-md-6"><h4>Appointment Date : <%#DataBinder.Eval(Container,"DataItem.AppDate")%></h4> </div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6"><h4>Appointment Time : <%#DataBinder.Eval(Container,"DataItem.time")%></h4> </div>
+						<div class="col-md-6">
+							<asp:DropDownList class="custom-select" ID="type" name="type" runat="server">
 									<asp:ListItem Value="0" >-- Select --</asp:ListItem>
 									<asp:ListItem Value="Address Related">Address Related</asp:ListItem>
 									<asp:ListItem Value="Fees Related">Fees Related</asp:ListItem>
 									<asp:ListItem Value="Service Related">Service Related</asp:ListItem>
 									<asp:ListItem Value="Authenticity Related">Authenticity Related</asp:ListItem>
 									<asp:ListItem Value="Others">Others</asp:ListItem>
-								</asp:DropDownList>
-								</td>
-							</tr>
-								
-								
-				                <tr>
-									<th scope="row">
-										Description :
-									</th>
-									<td>
-									<asp:TextBox class="form-group" ID="desc" name="desc" runat="server" ></asp:TextBox>
-								<asp:TextBox class="form-group" ID="uuid" Visible="false" name="uuid" text='<%#DataBinder.Eval(Container,"DataItem.uid")%>'  runat="server"></asp:TextBox>
-				
-									</td>
-				                </tr>
-								
-								<tr>
-									<td colspan="2"> 
-										<asp:button class="btn btn-success" name="bttn" type="submit" Text="submit" runat="server" OnClick="Complaint_Insert"></asp:button>				
-
-									</td>
-								</tr>
-										
-
-								</tbody>
-				</table>
-								
-								   
+							</asp:DropDownList>
+						</div>
 					</div>
+
+					<div class="row">
+						<div class="col-12"> 
+							<asp:TextBox TextMode="MultiLine" class="form-group" style="width:100%;" ID="desc" name="desc" runat="server" Rows="4" ></asp:TextBox>
+							<asp:TextBox class="form-group" ID="uuid" Visible="false" name="uuid" text='<%#DataBinder.Eval(Container,"DataItem.uid")%>'  runat="server"></asp:TextBox> 
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12"> <asp:button class="btn btn-success" name="bttn" type="submit" Text="submit" runat="server" OnClick="Complaint_Insert"></asp:button> </div>
+					</div>
+
+				</div>			
 			</div>
+
+
+		</div>
+	</div>
 		
 
             </ItemTemplate>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -13,14 +14,40 @@ namespace OAMS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            MySqlConnectionStringBuilder connBuilder = new MySqlConnectionStringBuilder();
 
+            connBuilder.Add("Database", "OAMS");
+            connBuilder.Add("Data Source", "contra.cjrbdmxkv84s.ap-south-1.rds.amazonaws.com");
+            connBuilder.Add("User Id", "admin");
+            connBuilder.Add("Password", "MiloniMadhav");
+
+
+            MySqlConnection connection = new MySqlConnection(connBuilder.ConnectionString);
+            connection.Open();
+            MySqlDataAdapter da = new MySqlDataAdapter("select Details from profession_details where Type = 'specialization'", connection);
+            DataSet ds = new DataSet();
+            da.Fill(ds,"Table");
+            for(int i=0; i<ds.Tables[0].Rows.Count - 1;i++)
+            {
+                ListBox1.Items.Add(new ListItem(ds.Tables[0].Rows[i]["Details"].ToString()));
+            }
+
+            MySqlDataAdapter da2 = new MySqlDataAdapter("select Details from profession_details where Type = 'qualification'", connection);
+            DataSet ds2 = new DataSet();
+            da2.Fill(ds2, "Table");
+            for (int i = 0; i < ds2.Tables[0].Rows.Count - 1; i++)
+            {
+                ListBox2.Items.Add(new ListItem(ds2.Tables[0].Rows[i]["Details"].ToString()));
+            }
+            connection.Close();
+          
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                MySqlConnectionStringBuilder connBuilder = new MySqlConnectionStringBuilder();
+
+           
+            MySqlConnectionStringBuilder connBuilder = new MySqlConnectionStringBuilder();
 
                 connBuilder.Add("Database", "OAMS");
                 connBuilder.Add("Data Source", "contra.cjrbdmxkv84s.ap-south-1.rds.amazonaws.com");
@@ -55,14 +82,18 @@ namespace OAMS
                     MessageBox.Show("Passwords Dont Match");
                 }
 
-                cmd.ExecuteNonQuery();
+               int x = cmd.ExecuteNonQuery();
+                if(x >0)
+                {
+                    MessageBox.Show("Successfully Registered.");
+                }
 
+                else
+                {
+                    MessageBox.Show("something wrong has happened");
+                }
                 connection.Close();
-            }
-            catch (MySqlException error)
-            {
-                MessageBox.Show(error.Message);
-            }
+           
         }
     }
 }

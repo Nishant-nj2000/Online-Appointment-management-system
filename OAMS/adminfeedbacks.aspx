@@ -25,7 +25,7 @@
                                 Feedback Message 
                             </th> 
                             <th scope="col">  
-                                Feedback From 
+                                Feedback From (User Id)
                             </th> 
 
                     </tr>

@@ -36,9 +36,13 @@
         <div class="card-body">
 
             <div class="row" style="background-color:black; border-radius:6px;color:white;">
-                <div class="col-md-6" ><h2 style="margin-block:auto;">  <%#DataBinder.Eval(Container,"DataItem.Name")%>  </h2></div> 
-                <div class="col-md-2 form-group-sm text-center" style="margin-block:auto;"> <asp:TextBox TextMode="Date" ID="date1" runat="server" style="border-radius:6px;" ></asp:TextBox> </div>
-                <div class="col-md-2 form-group-sm text-center" style="margin-block:auto;"> <asp:TextBox TextMode="time" ID="time1" runat="server" style="border-radius:6px;" ></asp:TextBox> </div>
+                <div class="col-md-6" ><h2 style="margin-block:auto;">  <%#DataBinder.Eval(Container,"DataItem.Name")%>  </h2></div>                     
+                <div class="col-md-2 form-group-sm text-center" style="margin-block:auto;"> <asp:TextBox TextMode="Date" ID="date1" runat="server" style="border-radius:6px;" ></asp:TextBox> 
+                  
+                </div>
+                <div class="col-md-2 form-group-sm text-center" style="margin-block:auto;"> <asp:TextBox TextMode="time" ID="time1" runat="server" style="border-radius:6px;"></asp:TextBox> 
+                   
+                </div>
                 <div class="col-md-2 text-center" style="margin-block:auto;"><asp:Button runat="server" ID="book_btn" class="btn btn-sm btn-block btn-primary" type="button" onclick="user_booking" text="Request Booking"></asp:Button></div>
                 <asp:TextBox ID="cid" Class="form-group" Text='<%#DataBinder.Eval(Container,"DataItem.cid")%>' runat="server" Visible="false"></asp:TextBox>
             </div>
@@ -73,10 +77,13 @@
             </div>
             <hr />
             <div class="row text-center">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <h4 class="badge badge-pill badge-info" style="font-size:20px;"><i class="fa fa-phone" aria-hidden="true"></i> <%#DataBinder.Eval(Container,"DataItem.Phone_No")%></h4>
                 </div>
-                <div class="col-md-6">
+                 <div class="col-md-4">
+                    <h4 class="badge badge-pill badge-info" style="font-size:20px;"></i> Monday - Saturday  <%#DataBinder.Eval(Container,"DataItem.Start_Time")%> - <%#DataBinder.Eval(Container,"DataItem.End_Time")%></h4>
+                </div>
+                <div class="col-md-4">
                     <h4 class="badge badge-pill badge-info" style="font-size:20px;"><i class="fa fa-envelope" aria-hidden="true"></i> <%#DataBinder.Eval(Container,"DataItem.Email_ID")%></h4>
                 </div>                
             </div>

@@ -20,7 +20,7 @@
                 
                             <div class="form-group">
                                 
-                                <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Enter Registered Email ID" TextMode="Email"></asp:TextBox>
+                                <asp:TextBox CssClass="form-control" ID="txtEmail" runat="server" placeholder="Enter Registered Email ID" TextMode="Email"></asp:TextBox>
                             </div>
                             </div>
                         </div>
@@ -30,7 +30,7 @@
                        <div class="row">
                         <div class="col">
                             <div class="form-group">
-                                <asp:Button type="button" class="btn btn-primary btn-block" style="width:100%;" ID="Button1" runat="server" Text="Send Link" />
+                                <asp:Button type="button" class="btn btn-primary btn-block" style="width:100%;" ID="Button1" runat="server" Text="Send Link" OnClick="SendEmail"/>
                             </div>                     
                         </div>
                        </div>

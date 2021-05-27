@@ -15,7 +15,7 @@
     <div>  
         <asp:Repeater ID="RepeatInformation" runat="server">  
             <HeaderTemplate>  
-                <table border="1" style="border-radius:5px;" class="table table-responsive table-striped">  
+                <table border="1" style="border-radius:5px;" class="table table-responsive table-striped mx-auto w-auto">  
                     <thead class="thead-dark">
                     <tr>  
                          
@@ -55,8 +55,8 @@
                                 Current Status 
                             </th> 
                             
-                            <th scope="col">  
-                                Change Status 
+                            <th scope="col" class="text-nowrap">  
+                                Edit Status 
                             </th>
                             
                             <th scope="col">  
@@ -102,8 +102,7 @@
                     </td> 
 
                     <td>
-                         
-                        <asp:button class="btn btn-outline-dark" runat="server" name="change" type="submit" Text="Change" OnClick="changestatus" ></asp:button>
+                        <asp:LinkButton ID="LinkButton1" name="change" class="btn btn-dark" type="submit" runat="server" OnClick="changestatus"><i class="fa fa-edit"></i></asp:LinkButton>
                         <asp:TextBox class="form-group" ID="uid" Visible="false" name="uid" text='<%#Eval("UID")%>'  runat="server"></asp:TextBox>
                         <asp:TextBox class="form-group" ID="activation" Visible="false" name="activation" text='<%#Eval("Activation")%>'  runat="server"></asp:TextBox>
                         

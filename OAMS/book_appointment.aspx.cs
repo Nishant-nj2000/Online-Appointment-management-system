@@ -25,7 +25,7 @@ namespace OAMS
 
             MySqlCommand cmd = connection.CreateCommand();
 
-            cmd.CommandText = "SELECT * FROM OAMS.profession_master join OAMS.consultant_master on OAMS.profession_master.cid = OAMS.consultant_master.cid join OAMS.user_master on OAMS.consultant_master.uid = OAMS.user_master.uid where OAMS.profession_master.Profession_Type_ID = '2' or OAMS.profession_master.Profession_Type_ID ='1' ; ";
+            cmd.CommandText = "SELECT * FROM OAMS.profession_master join OAMS.consultant_master on OAMS.profession_master.cid = OAMS.consultant_master.cid join OAMS.user_master on OAMS.consultant_master.uid = OAMS.user_master.uid join OAMS.schedule on OAMS.schedule.CID = OAMS.consultant_master.CID where OAMS.profession_master.Profession_Type_ID = '2' or OAMS.profession_master.Profession_Type_ID ='1' ; ";
             connection.Open();
             book_appoint.DataSource = cmd.ExecuteReader();
             book_appoint.DataBind();
@@ -51,11 +51,11 @@ namespace OAMS
             int h1 = Int32.Parse(select1.SelectedValue.ToString());
             if (h1 == 0)
             {
-                cmd.CommandText = "SELECT * FROM OAMS.profession_master join OAMS.consultant_master on OAMS.profession_master.cid = OAMS.consultant_master.cid join OAMS.user_master on OAMS.consultant_master.uid = OAMS.user_master.uid where OAMS.profession_master.Profession_Type_ID = '2' or OAMS.profession_master.Profession_Type_ID ='1' ; ";
+                cmd.CommandText = "SELECT * FROM OAMS.profession_master join OAMS.consultant_master on OAMS.profession_master.cid = OAMS.consultant_master.cid join OAMS.user_master on OAMS.consultant_master.uid = OAMS.user_master.uid join OAMS.schedule on OAMS.schedule.CID = OAMS.consultant_master.CID where OAMS.profession_master.Profession_Type_ID = '2' or OAMS.profession_master.Profession_Type_ID ='1' ; ";
             }
             else
             {
-                cmd.CommandText = "SELECT * FROM OAMS.profession_master join OAMS.consultant_master on OAMS.profession_master.cid = OAMS.consultant_master.cid join OAMS.user_master on OAMS.consultant_master.uid = OAMS.user_master.uid where OAMS.profession_master.Profession_Type_ID = '" + h1 + "'; ";
+                cmd.CommandText = "SELECT * FROM OAMS.profession_master join OAMS.consultant_master on OAMS.profession_master.cid = OAMS.consultant_master.cid join OAMS.user_master on OAMS.consultant_master.uid = OAMS.user_master.uid join OAMS.schedule on OAMS.schedule.CID = OAMS.consultant_master.CID where OAMS.profession_master.Profession_Type_ID = '" + h1 + "'; ";
             }
 
             connection.Open();
