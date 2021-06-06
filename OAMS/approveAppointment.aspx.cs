@@ -39,7 +39,7 @@ namespace OAMS
             connection.Close();
 
             
-            cmd.CommandText = "select *,DATE(dob) as 'DateOfBirth' from appointment_master inner join user_master ON user_master.UID=appointment_master.UID where appointment_master.CID="+ CID + ";";
+            cmd.CommandText = "select * from appointment_master inner join user_master ON user_master.UID=appointment_master.UID where appointment_master.CID="+ CID + ";";
             connection.Open();
             appointments.DataSource = cmd.ExecuteReader();
             appointments.DataBind();

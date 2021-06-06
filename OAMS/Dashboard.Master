@@ -112,12 +112,11 @@
                       </li>
                       <!-- your sidebar here -->
                     </ul>
-                    <ul class="nav">
-                      <li class="nav-item active  ">
+                    <!--  <li class="nav-item active  ">
                          <asp:LinkButton ID="LinkButton12" runat="server" Width="230px" Font-Size="Medium" OnClick="Consultant_Complaint"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Complaint</asp:LinkButton>
                       </li>
-                      <!-- your sidebar here -->
-                    </ul>
+                      <!-- your sidebar here
+                    </ul> -->
                   </div>
             
             <% } %>

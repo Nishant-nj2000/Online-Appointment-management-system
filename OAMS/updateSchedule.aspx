@@ -16,31 +16,32 @@
          <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail4">Start Date</label>
-              <input type="date" class="form-control" id="sdate" runat="server">
+              <input type="date" class="form-control" name="sdate" id="sdate" runat="server">
             </div>
             <div class="form-group col-md-6">
               <label for="inputPassword4">End Date</label>
-              <input type="date" class="form-control" id="edate" runat="server">
+              <input type="date" class="form-control" id="edate" name="edate" runat="server">
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail4">Start Time</label>
-              <input type="time" class="form-control" id="stime" runat="server">
+              <input type="time" class="form-control" id="stime" name="stime" runat="server">
             </div>
             <div class="form-group col-md-6">
               <label for="inputPassword4">End Time</label>
-              <input type="time" class="form-control" id="etime" runat="server">
+              <input type="time" class="form-control" id="etime" name="etime" runat="server">
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-2">
               <label for="inputEmail4">Limit</label>
-              <input type="text" class="form-control" id="limit" runat="server">
+              <input type="text" class="form-control" id="limit" name="limit" runat="server">
             </div>
         </div>
         <div class="form-row">
-             <button class="btn btn-success" type="submit" runat="server" >Submit</button>
+             
+            <button class="btn btn-success" type="submit" runat="server" >Submit</button>
         </div>
     </div>
 </body>

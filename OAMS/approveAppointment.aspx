@@ -74,7 +74,7 @@
                         <%#DataBinder.Eval(Container,"DataItem.Gender")%>  
                     </td>  
                     <td>  
-                        <%#DataBinder.Eval(Container,"DataItem.DateOfBirth")%>  
+                        <%#DataBinder.Eval(Container,"DataItem.DOB")%>  
                     </td>  
                     <td>  
                         <%#DataBinder.Eval(Container,"DataItem.City")%>  
